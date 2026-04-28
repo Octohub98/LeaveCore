@@ -4,9 +4,9 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <FileVersion>1.0.0</FileVersion>
-    <LastUpdate>April 27, 2026</LastUpdate>
-    <LastUpdateAH>Dhu al-Qa'dah 9, 1447 AH</LastUpdateAH>
+    <FileVersion>1.0.1</FileVersion>
+    <LastUpdate>April 28, 2026</LastUpdate>
+    <LastUpdateAH>Dhu al-Qa'dah 10, 1447 AH</LastUpdateAH>
   </PropertyGroup>
 
   <ItemGroup>

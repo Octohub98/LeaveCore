@@ -104,7 +104,7 @@ try
 
     builder.Configuration
         .AddJsonFile("appsettings.chronicle.json", optional: true, reloadOnChange: true)
-        .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+        .AddJsonFile($"appsettings.chronicle.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true);
 
     builder.Services.AddDetection();
     builder.Services.AddChronicleLogging(builder.Configuration);
