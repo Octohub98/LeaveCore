@@ -13,6 +13,9 @@ obj/
 .DS_Store
 Thumbs.db
 
-# Local runtime config
+# Local runtime config (NEVER commit secrets — use these for local dev only)
 **/appsettings.Development.json
 **/appsettings.Local.json
+**/appsettings.Production.json
+**/appsettings.chronicle.Development.json
+**/appsettings.chronicle.Local.json
