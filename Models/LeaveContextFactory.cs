@@ -8,9 +8,12 @@ namespace LeaveCore.Models
     {
         public LeaveContext CreateDbContext(string[] args)
         {
+            var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Development";
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: false)
+                .AddJsonFile($"appsettings.{env}.json", optional: true)
+                .AddEnvironmentVariables()
                 .Build();
 
             var connectionString = configuration.GetConnectionString("LeaveConnection");
